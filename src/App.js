@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./test.scss";
+import { GithubIcon } from "./Icons/github-icon";
+import { Routes, Route } from "react-router-dom";
+import { Profile, Login } from "./Pages";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="profile" element={<Profile />} />
+        </Routes>
+      </div>
+      <div className="footer-link">
+        <h3>Made with ❤️ on</h3>
+        <GithubIcon />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,180 @@
+$input-font-size: 1.3rem;
+$footer-link-color: rgb(209, 209, 209);
+
+.App {
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.background-color{
+    background-color: rgb(236, 236, 236);
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    color: $footer-link-color;
+    h3 {
+        font-weight: 400;
+    }
+}
+
+
+.form-container {
+    // margin-left: 180px;
+    // padding-left: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo-image {
+    width:40px;
+    height:40px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h1{
+        font-size: 2.4rem;
+        font-weight: 900;
+        font-family: "Inter";
+    }
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    margin-top: 20px;
+    // margin-left: 50px;    
+}
+
+
+.form-input {
+  font-family: inherit;
+  margin-bottom: 20px;
+  width: 24rem;
+  border: 0;
+  border-bottom: 2px solid rgb(209, 209, 209);
+  outline: 0;
+  font-size: $input-font-size;
+  color: white;
+  padding: 8px 16px;
+  background: transparent;
+}
+.form-input:focus {
+      top: 0;
+      display: block;
+      transition: 0.4s;
+      font-size: $input-font-size;
+      color: rgb(87, 87, 87);
+      font-weight:500;    
+}
+
+.form-input::placeholder {
+    color: rgb(201, 201, 201);
+}
+
+.form-input-header {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}
+
+.form-submit {
+    width: 10%;
+    padding: 15px 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(129, 224, 236);
+    border: none;   
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px; 
+}
+
+.cta {
+ position: relative;
+ margin: 20px ;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+}
+
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #b1dae7;
+ width: 45px;
+ height: 45px;
+ transition: all 0.3s ease;
+}
+
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
+}
+
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+ width: 100%;
+ background: #b1dae7;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active {
+ transform: scale(0.95);
+}
+
+.link {
+    color: rgb(32, 28, 28);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.button-span { 
+    // border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+}
